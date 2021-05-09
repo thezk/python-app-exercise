@@ -1,5 +1,6 @@
 from datetime import date
 
+
 def save_todos(csv_todos, storage_path):
     for todo in csv_todos:
         save_todo(todo, storage_path)
@@ -15,5 +16,3 @@ def __generate_filename(todo: str, storage_path):
     id = todo.split(',')[0]
     date_str = date.today().strftime("%Y_%m_%d")
     return f"{storage_path}{date_str}_{id}.csv"
-
-    

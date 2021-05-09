@@ -7,4 +7,3 @@ def parse_todos(raw_todos, ordered_fields):
 def __json_to_csv(raw_todo, ordered_fields):
     values = [str(raw_todo[field]) for field in ordered_fields]
     return ','.join(values)
-    

@@ -1,6 +1,6 @@
 from sys import stderr
-from src.Services.parse_todos import parse_todos
 
+from src.Services.parse_todos import parse_todos
 from src.Services.download_todos import download_todos
 from src.Services.save_todos import save_todos
 
