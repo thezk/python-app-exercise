@@ -3,6 +3,12 @@
 from src.Application.App import App
 
 
-app = App()
+service_params = {
+    "todos_url": "https://jsonplaceholder.typicode.com/todos/",
+    "field_order": ['id', 'userId', 'title', 'completed'],
+    "folder_path": 'storage/'
+}
 
-app.api_service().run()
+app = App(service_params)
+
+app.todo_service().run()
