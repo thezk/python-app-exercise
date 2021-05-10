@@ -13,7 +13,7 @@ class TodoService:
 
     def run(self):
         print('Running TodoService', file=stderr)
-        raw_todos = download_todos(self.__params['todos_url'])
-        csv_todos = parse_todos(raw_todos, self.__params['field_order'], self.__params['folder_path'])
+        raw_todos = download_todos(self.__params['TODOS_URL'])
+        csv_todos = parse_todos(raw_todos, self.__params['FIELD_ORDER'], self.__params['STORAGE_FOLDER_PATH'])
         save_todos(csv_todos)
         print('TodoService executed successfully', file=stderr)

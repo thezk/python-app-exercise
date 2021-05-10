@@ -4,9 +4,9 @@ from src.Application.App import App
 
 
 service_params = {
-    "todos_url": "https://jsonplaceholder.typicode.com/todos/",
-    "field_order": ['id', 'userId', 'title', 'completed'],
-    "folder_path": 'storage/'
+    "TODOS_URL": "https://jsonplaceholder.typicode.com/todos/",
+    "FIELD_ORDER": ['id', 'userId', 'title', 'completed'],
+    "STORAGE_FOLDER_PATH": 'storage/'
 }
 
 app = App(service_params)
