@@ -7,7 +7,7 @@ from src.Services.TodoService.save_todos import save_todos
 
 class TodoService:
 
-    def __init__(self, params):
+    def __init__(self, params: dict):
         self.__params = params
 
 
