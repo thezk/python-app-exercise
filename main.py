@@ -2,6 +2,11 @@
 
 from src.Application.App import App
 
+"""
+For good practices, the parameters for the app are set here.
+Ideally, they would be set as an environment variable or another
+external source.
+"""
 
 service_params = {
     "TODOS_URL": "https://jsonplaceholder.typicode.com/todos/",

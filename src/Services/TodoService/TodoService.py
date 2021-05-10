@@ -6,6 +6,11 @@ from src.Services.TodoService.save_todos import save_todos
 
 
 class TodoService:
+    """
+    This class will act as the orchestrator for the small modules
+    that compose this service. 
+    It's also the holder of the parameters for the service.
+    """
 
     def __init__(self, params: dict):
         self.__params = params
