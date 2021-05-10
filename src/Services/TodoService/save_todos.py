@@ -1,4 +1,3 @@
-from datetime import date
 
 
 def save_todos(csv_todos):
