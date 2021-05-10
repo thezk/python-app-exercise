@@ -11,8 +11,15 @@ def parse_todos(raw_todos, ordered_fields, storage_path):
 
 
 def __json_to_csv(raw_todo, ordered_fields):
-    values = [str(raw_todo[field]) for field in ordered_fields]
+    values = [__stringify_value(raw_todo[field]) for field in ordered_fields]
     return ','.join(values)
+
+
+def __stringify_value(value):
+    str_value = str(value) or '' # default to empty value
+    if ',' in str_value:
+        str_value = f'"{str_value}"' # Adding the "" to escape the separator value in the CSV format if needed.
+    return str_value
 
 
 def __generate_filename(todo: dict, storage_path):
