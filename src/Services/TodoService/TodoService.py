@@ -16,3 +16,4 @@ class TodoService:
         raw_todos = download_todos(self.__params['todos_url'])
         csv_todos = parse_todos(raw_todos, self.__params['field_order'], self.__params['folder_path'])
         save_todos(csv_todos)
+        print('TodoService executed successfully', file=stderr)
